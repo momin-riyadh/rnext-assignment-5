@@ -2,6 +2,7 @@ import LOGO from '../../assets/logo.svg'
 import SEARCH from '../../assets/icons/search.svg';
 
 import {Link} from "react-router-dom";
+import Logout from "../auth/Logout.jsx";
 
 function Header() {
     return (
@@ -42,12 +43,7 @@ function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link
-                                to="/login"
-                                className="text-white/50 hover:text-white transition-all duration-200"
-                            >
-                                Login
-                            </Link>
+                           <Logout/>
                         </li>
                         <li className="flex items-center">
                             {/*Circular Div with background color*/}
