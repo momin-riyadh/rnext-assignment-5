@@ -1,12 +1,13 @@
-
+import {Routes, Route} from "react-router-dom";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
 
-  return (
-    <>
-      <h1 className="text-3xl font-bold">Lorem ipsum dolor sit amet.</h1>
-    </>
-  )
+    return (
+        <Routes>
+            <Route element={<HomePage/>} path="/" exact/>
+        </Routes>
+    )
 }
 
 export default App
