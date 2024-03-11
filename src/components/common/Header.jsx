@@ -1,20 +1,22 @@
 import LOGO from '../../assets/logo.svg'
+import {Link} from "react-router-dom";
+
 function Header() {
     return (
         <header>
             <nav className="container">
                 {/*Logo*/}
                 <div>
-                    <a href="./index.html">
-                        <img className="w-32" src="./assets/logo.svg" alt="lws"/>
-                    </a>
+                    <Link to="/">
+                        <img className="w-32" src={LOGO} alt="lws"/>
+                    </Link>
                 </div>
 
-               {/* Actions - Login, Write, Home, Search
+                {/* Actions - Login, Write, Home, Search
                 Notes for Developers
                 For Logged in User - Write, Profile, Logout Menu
                 For Not Logged in User - Login Menu */}
-                
+
                 <div>
                     <ul className="flex items-center space-x-5">
                         <li>
@@ -46,19 +48,19 @@ function Header() {
                             </a>
                         </li>
                         <li className="flex items-center">
-                            <!-- Circular Div with background color -->
+                            {/*Circular Div with background color*/}
                             <div className="avater-img bg-orange-600 text-white">
                                 <span className="">S</span>
-                                <!-- User's first name initial -->
+                                {/*User's first name initial*/}
                             </div>
 
-                            <!-- Logged-in user's name -->
+                            {/*Logged-in user's name*/}
                             <a href="./profile.html"
                             ><span className="text-white ml-2"
                             >Saad Hasan</span
                             ></a
                             >
-                            <!-- Profile Image -->
+                            {/*Profile Image*/}
                         </li>
                     </ul>
                 </div>
