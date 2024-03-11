@@ -5,12 +5,11 @@ function HomePage() {
     return (
         <div>
             <Header/>
-            <main>
+            <main className="min-h-calc-100vh-214px">
                 <div className="container">
                     <h1>Home Page</h1>
                 </div>
             </main>
-
             <Footer/>
         </div>
     );
