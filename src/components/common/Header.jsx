@@ -1,4 +1,6 @@
 import LOGO from '../../assets/logo.svg'
+import SEARCH from '../../assets/icons/search.svg';
+
 import {Link} from "react-router-dom";
 
 function Header() {
@@ -20,32 +22,32 @@ function Header() {
                 <div>
                     <ul className="flex items-center space-x-5">
                         <li>
-                            <a
-                                href="./createBlog.html"
+                            <Link
+                                to="/"
                                 className="bg-indigo-600 text-white px-6 py-2 md:py-3 rounded-md hover:bg-indigo-700 transition-all duration-200"
                             >
                                 Write
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="./search.html"
+                            <Link
+                                to="/search"
                                 className="flex items-center gap-2 cursor-pointer"
                             >
                                 <img
-                                    src="./assets/icons/search.svg"
+                                    src={SEARCH}
                                     alt="Search"
                                 />
                                 <span>Search</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
-                                href="./login.html"
+                            <Link
+                                to="/login"
                                 className="text-white/50 hover:text-white transition-all duration-200"
                             >
                                 Login
-                            </a>
+                            </Link>
                         </li>
                         <li className="flex items-center">
                             {/*Circular Div with background color*/}
@@ -55,10 +57,10 @@ function Header() {
                             </div>
 
                             {/*Logged-in user's name*/}
-                            <a href="./profile.html"
+                            <Link to="/me"
                             ><span className="text-white ml-2"
                             >Saad Hasan</span
-                            ></a
+                            ></Link
                             >
                             {/*Profile Image*/}
                         </li>
